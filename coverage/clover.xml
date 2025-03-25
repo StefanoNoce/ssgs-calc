@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1741859346286" clover="3.2.0">
+  <project timestamp="1741859346286" name="All files">
+    <metrics statements="10" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="1" elements="16" coveredelements="3" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+    <file name="math.js" path="C:\Users\nstef\OneDrive - unige.it\SSGS\ssgs-projects\ssgs-calc\math.js">
+      <metrics statements="10" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="1"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="22" count="0" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
