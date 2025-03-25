@@ -21,18 +21,18 @@ function multiply(a, b) {
 function divide(a, b) {
     if (b == 0)
         throw new Error("Cannot divide by 0");
-        
+
     return a / b;
 }
 
-// function pow(a, b) {
-//     let pow = a;
+function pow(a, b) {
+    let pow = a;
 
-//     for (let i = 0; i < b; i++)
-//         pow = pow * a;
+    for (let i = 0; i < b; i++)
+        pow = pow * a;
 
-//     return pow;
+    return pow;
 
-// }
+}
 
 module.exports = { add, sum, diff, subtract, multiply, divide, pow };
