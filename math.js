@@ -28,7 +28,7 @@ function divide(a, b) {
 function pow(a, b) {
     let pow = a;
 
-    for (let i = 0; i < b; i++)
+    for (let i = 1; i < b; i++)
         pow = pow * a;
 
     return pow;
