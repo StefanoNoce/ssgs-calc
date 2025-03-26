@@ -31,17 +31,23 @@ function validateOperator(operator) {
                     console.log('The result is: ', result);
                     resolve();
                 }).catch((err) => {
-                    console.log('Error:', err);
+                    console.log(err);
                     reject(err);
                 });
                 break;
             case '/':
                 promptForNumbers().then(({ a, b }) => {
-                    const result = myMath.divide(Number(a), Number(b));
-                    console.log('The result is: ', result);
-                    resolve();
+                    if (Number(b) === 0) {
+                        console.log('Cannot divide by 0, try again!');
+                        validateOperator('/');
+                    }
+                    else {
+                        const result = myMath.divide(Number(a), Number(b));
+                        console.log('The result is: ', result);
+                        resolve();
+                    }
                 }).catch((err) => {
-                    console.log('Error:', err);
+                    console.log(err);
                     reject(err);
                 });
                 break;
@@ -86,7 +92,7 @@ function getInputData(inputText) {
     });
 }
 
-function randomGreatings(){
+function randomGreatings() {
     const greetings = ['Bye!', 'See you soon!'];
     return greetings[Math.floor(Math.random() * greetings.length)];
 }
