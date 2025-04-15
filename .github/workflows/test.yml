@@ -7,10 +7,17 @@ jobs:
             - name: Checkout repo
               uses: actions/checkout@v3
             
-            - name: Use nodejs
+            - name: Use node.js
               uses: actions/setup-node@v3
               with:
                 node-version: '>=14.x'
 
-            - run: npm install
-            - run: npm test
+            
+            - name: Installa dipendenze
+              run: npm install
+
+            - name: Aggiungi permessi esecuzione jest
+              run: chmod +x ./node_modules/.bin/jest
+
+            - name: Esegui i test
+              run: npm test
