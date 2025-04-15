@@ -1,7 +1,7 @@
 name: Test
 on: push
 jobs:
-    test:
+    Test:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repo
@@ -19,5 +19,11 @@ jobs:
             - name: Aggiungi permessi esecuzione jest
               run: chmod +x ./node_modules/.bin/jest
 
-            - name: Esegui i test
-              run: npm test
+            - name: Esegui i test con code coverage
+              run: npm test -- --coverage
+
+            - name: Carica i risultati della code coverage
+              uses: actions/upload-artifact@v3
+              with:
+                name: coverage-report
+                path: coverage
