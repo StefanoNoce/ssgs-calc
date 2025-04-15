@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1741859346286" clover="3.2.0">
-  <project timestamp="1741859346286" name="All files">
-    <metrics statements="10" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="1" elements="16" coveredelements="3" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+<coverage generated="1744096738764" clover="3.2.0">
+  <project timestamp="1744096738764" name="All files">
+    <metrics statements="13" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="5" elements="22" coveredelements="18" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
     <file name="math.js" path="C:\Users\nstef\OneDrive - unige.it\SSGS\ssgs-projects\ssgs-calc\math.js">
-      <metrics statements="10" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="1"/>
+      <metrics statements="13" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="5"/>
       <line num="2" count="2" type="stmt"/>
       <line num="6" count="0" type="stmt"/>
-      <line num="10" count="0" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
       <line num="14" count="0" type="stmt"/>
-      <line num="18" count="0" type="stmt"/>
-      <line num="22" count="0" type="stmt"/>
-      <line num="24" count="0" type="stmt"/>
-      <line num="25" count="0" type="stmt"/>
-      <line num="27" count="0" type="stmt"/>
-      <line num="31" count="1" type="stmt"/>
+      <line num="18" count="3" type="stmt"/>
+      <line num="22" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="29" count="2" type="stmt"/>
+      <line num="31" count="2" type="stmt"/>
+      <line num="32" count="10" type="stmt"/>
+      <line num="34" count="2" type="stmt"/>
+      <line num="38" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
