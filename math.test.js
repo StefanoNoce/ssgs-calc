@@ -56,3 +56,23 @@ test('pow 2 and 2 to be 4', () => {
 test('pow 2 and 10 to be 1024', () => {
     expect(pow(2, 10)).toBe(1024);
 });
+
+const sum = require('./math').sum;
+
+test('adds 1 + 2 to equal 3', () => {
+    expect(sum(1, 2)).toBe(3);
+});
+
+test('adds 5 + 7 to equal 12', () => {
+    expect(sum(5, 7)).toBe(12);
+});
+
+const subtract = require('./math').subtract;
+
+test('subtract 1 and 1 to equal 0', () => {
+    expect(subtract(1, 1)).toBe(0);
+});
+
+test('subtract 0 and 1 to equal -1', () => {
+    expect(subtract(0, 1)).toBe(-1);
+});
