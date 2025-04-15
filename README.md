@@ -27,3 +27,7 @@ Un'applicazione Node.js per eseguire operazioni matematiche di base (+, -, *, /,
 3. Esegui il comando seguente per installare eventuali dipendenze (se necessarie):
    ```bash
    npm install
+
+## Esecuzione
+  ```bash
+  node ./main.js
