@@ -1,5 +1,5 @@
 # Directory di output della code coverage
-coverage/
+./coverage/
 
 # Dipendenze installate da npm
-node_modules/
+./node_modules/
