@@ -29,5 +29,7 @@ Un'applicazione Node.js per eseguire operazioni matematiche di base (+, -, *, /,
    npm install
 
 ## Esecuzione
+
+Spostarsi nella cartella src/
   ```bash
   node ./main.js
