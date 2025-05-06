@@ -22,22 +22,37 @@ Un'applicazione Node.js per eseguire operazioni matematiche di base (+, -, *, /,
 
 ## Installazione
 
-1. Clona il repository o scarica i file del progetto.
-2. Assicurati di avere Node.js installato.
-3. Esegui il comando seguente per installare eventuali dipendenze (se necessarie):
+1. Clona il repository o scarica i file del progetto:
+   ```bash
+   git clone https://github.com/StefanoNoce/ssgs-calc.git
+   cd ssgs-calc
+   ```
+2. Installa le dipendenze:
    ```bash
    npm ci
    ```
+
 ## Esecuzione
 
-Spostarsi nella cartella src/
-  ```bash
-  node ./main.js
-  ```
-  
+Per avviare l'applicazione, esegui il comando seguente dalla root del progetto:
+```bash
+npm start
+```
+
 ## Test
 
-Per eseguire i test senza coverage
+Per eseguire i test automatizzati con Jest e generare il report di coverage:
 ```bash
 npm test
 ```
+
+L'obiettivo è raggiungere il 100% di coverage per tutte le metriche (Statements, Branches, Functions, Lines).
+
+## Integrazione Continua (CI)
+
+Questo progetto utilizza GitHub Actions per eseguire automaticamente i test e verificare la coverage ad ogni push. La pipeline esegue i seguenti passaggi:
+- Installa le dipendenze.
+- Esegue i test con Jest.
+- Genera e carica il report di coverage.
+
+Puoi trovare la configurazione della pipeline nel file `.github/workflows/test.yml`.
