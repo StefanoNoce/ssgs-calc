@@ -18,7 +18,7 @@ Un'applicazione Node.js per eseguire operazioni matematiche di base (+, -, *, /,
 
 ## Requisiti
 
-- Node.js (versione 14 o superiore)
+- Node.js (versione 22 o superiore)
 
 ## Installazione
 
@@ -26,10 +26,18 @@ Un'applicazione Node.js per eseguire operazioni matematiche di base (+, -, *, /,
 2. Assicurati di avere Node.js installato.
 3. Esegui il comando seguente per installare eventuali dipendenze (se necessarie):
    ```bash
-   npm install
-
+   npm ci
+   ```
 ## Esecuzione
 
 Spostarsi nella cartella src/
   ```bash
   node ./main.js
+  ```
+  
+## Test
+
+Per eseguire i test senza coverage
+```bash
+npm test
+```
