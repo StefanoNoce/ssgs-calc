@@ -10,7 +10,7 @@ jobs:
             - name: Use node.js
               uses: actions/setup-node@v3
               with:
-                node-version: '>=14.x'
+                node-version: '>=22.x'
 
             
             - name: Installa dipendenze
@@ -20,7 +20,7 @@ jobs:
               run: chmod +x ./node_modules/.bin/jest
 
             - name: Esegui i test con code coverage
-              run: npm test -- --coverage
+              run: npm test
 
             - name: Carica i risultati della code coverage
               uses: actions/upload-artifact@v4

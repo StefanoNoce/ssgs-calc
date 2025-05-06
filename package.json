@@ -1,15 +1,25 @@
 {
   "name": "ssgs-calc",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["math", "calculator"],
+  "author": "StefanoNoce",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "jest": "^29.7.0"
+  "description": "A simple calculator that can perform basic arithmetic operations.",
+  "engines": {"node": "23.x"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StefanoNoce/ssgs-calc.git"
+  },
+  "homepage": "https://github.com/StefanoNoce/ssgs-calc#readme",
+  "bugs": {
+    "url": "https://github.com/StefanoNoce/ssgs-calc/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "29.7.0"
+    }
   }
-}
